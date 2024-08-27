@@ -61,3 +61,21 @@ main {
     padding: 2rem;
   }
 }
+
+nav {
+  background-color: hsla(116, 52%, 63%, .8);
+  text-align: center;
+}
+
+a{
+  display:inline-block;
+  color: rgb(15, 80, 10);
+  text-decoration: none;
+  padding: 15px;
+  font-size:27px;
+}
+
+a:hover{
+  color:rgb(118, 210, 112);
+  background-color:rgb(15, 80, 10); 
+}
