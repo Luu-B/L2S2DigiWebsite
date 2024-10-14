@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 const questions = [
     {
         question: "What is the maximum speed limit on New Zealand's open roads?",
@@ -232,3 +233,5 @@ window.onload = loadQuiz;
     alert(farewell);
   }
 }
+=======
+>>>>>>> Stashed changes
