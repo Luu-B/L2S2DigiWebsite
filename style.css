@@ -31,6 +31,38 @@ header h1 {
   text-align: center;
 }
 
+
+:root {
+  --steps: 16; // Char count
+  --background: #1d1f20;
+}
+
+.typing {
+  font-family: 'Inconsolata', Consolas, monospace;
+	font-size: 6vw;
+	color: #d7b94c;
+  position: relative;
+}
+	after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background: var(--background);
+    animation: typing 4s steps(var(--steps)) forwards,
+      caret 1s infinite;
+  }
+
+
+
+@keyframes typing {
+	to { width: 0 }
+}
+@keyframes caret {
+	50% { color: transparent }
+}
+
+
 h2 {
   position: fixed;
   top: 11rem;
@@ -47,22 +79,18 @@ header h1 span {
 }
 
 main {
-  background: #fff;
   position: relative;
   border: 1px solid #fff;
-  font-family: "IM Fell French Canon Pro";
   font-size: 1.4rem;
   padding: 2rem 25%;
   line-height: 1.6;
 }
 
-
-
 nav {
   position: sticky;
   top: 0;
   background-color: rgb(109, 144, 52);
-  padding: 7px;
+  padding: 12px;
 }
 
 a{
@@ -83,4 +111,20 @@ p{
 
 h4{
   font-size: 28px;
+}
+
+@keyframes color {
+	0%   { background: #cfdbba; }
+	20%  { background: #bbdbba; }
+	40%  { background: #bbdbba; }
+	60%  { background: #badbd4; }
+	80%  { background: #bbdbba; }
+	100% { background: #cfdbba; }
+}
+
+main {
+  background: #cfdbba; /* Fallback */
+  animation: color 9s infinite linear;
+  text-align: center;
+  padding: 2em;
 }
