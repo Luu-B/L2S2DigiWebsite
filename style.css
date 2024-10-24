@@ -31,38 +31,6 @@ header h1 {
   text-align: center;
 }
 
-
-:root {
-  --steps: 16; // Char count
-  --background: #1d1f20;
-}
-
-.typing {
-  font-family: 'Inconsolata', Consolas, monospace;
-	font-size: 6vw;
-	color: #d7b94c;
-  position: relative;
-}
-	after {
-    content: "|";
-    position: absolute;
-    right: 0;
-    width: 100%;
-    background: var(--background);
-    animation: typing 4s steps(var(--steps)) forwards,
-      caret 1s infinite;
-  }
-
-
-
-@keyframes typing {
-	to { width: 0 }
-}
-@keyframes caret {
-	50% { color: transparent }
-}
-
-
 h2 {
   position: fixed;
   top: 11rem;
@@ -128,3 +96,50 @@ main {
   text-align: center;
   padding: 2em;
 }
+
+html{
+	background-color:#ff6f69;
+	background: radial-gradient(#ff6f69, #ff8b87);
+}
+
+.inner-cutout{
+	padding: 40px 0;
+	display: block;
+	background-color:#ff6f69;
+	margin: 2%;
+	padding-bottom: 40px;
+	height: 300px;
+	background: radial-gradient(#ff6f69, #ff8b87);
+	background-size: 300%;
+	background-position:50% 50%;
+
+}
+.knockout {
+	vertical-align: middle;
+	text-align: center;
+	background: linear-gradient(110deg, #000000 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #252426 34%, #000000 34%);
+	background-size: 400%;
+	 -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.knockout{
+		animation: Gradient 7s ease infinite;
+		-webkit-animation: Gradient 15s ease infinite;
+		-moz-animation: Gradient 5s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 30% 50%
+	}
+	50% {
+		background-position: 25% 50%
+	}
+	100% {
+		background-position: 30% 50%
+	}
+	
+}
+
+
+
